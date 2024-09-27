@@ -15,7 +15,7 @@ RUN python -m venv /opt/venv && \
 # Copy the rest of the application files to the container
 COPY . .
 
-# Stage 2: Production Stage
+# Stage 2
 FROM python:3.9-slim
 
 # Set environment variables for Python
