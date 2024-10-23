@@ -40,6 +40,3 @@ For optimized builds, you can use the multi-stage Dockerfile to minimize the siz
 2. **Run the Multi-Stage Container**
    ```bash
    docker run -p 5000:5000 rock-paper-scissors-app
-
-
-
