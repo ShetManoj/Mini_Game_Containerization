@@ -17,11 +17,11 @@ Before running this application, ensure you have the following installed on your
 
 ### 1. Build the Docker Image
 To containerize the application, build the Docker image using the provided **Dockerfile**.
-```bash
+```bash```
 docker build -t rock-paper-scissors-app .
 
-### 2. Run the Docker Container
-Once the image is built, you can run the application inside a container:
-```bash
-docker run -p 5000:5000 rock-paper-scissors-app
+
+
+
+
 
