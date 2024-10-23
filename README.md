@@ -13,9 +13,9 @@ Before running this application, ensure you have the following installed on your
 - Python 3.9+
 - Docker
 
-## How to Run the Application Locally
+## Docker Instructions
 
-To containerize the application and run it locally, follow these steps:
+To containerize the application and run it, follow these steps:
 
 1. **Build the Docker Image**  
    To containerize the application, build the Docker image using the provided **Dockerfile**.
@@ -28,4 +28,18 @@ To containerize the application and run it locally, follow these steps:
 
    ```bash
    docker run -p 5000:5000 rock-paper-scissors-app
+
+## Multi-Stage Docker Build
+
+For optimized builds, you can use the multi-stage Dockerfile to minimize the size of the final image.
+
+1. **Build the Multi-Stage Docker Image**
+   ```bash
+   docker build -f Dockerfile.multistage -t rock-paper-scissors-app .
+
+2. **Run the Multi-Stage Container**
+   ```bash
+   docker run -p 5000:5000 rock-paper-scissors-app
+
+
 
